@@ -1,66 +1,49 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://github.com/Reizfy/ae/blob/master/public/assets/img/kasir.png" alt="Logo-KRRB" style="width: 100px;">
 </p>
 
-## About Laravel
+# Tentang Aplikasi
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Selamat datang di CashierApp, solusi terbaik untuk semua kebutuhan kasir Anda! Dirancang dengan sederhana dan efisien, CashierApp memberdayakan bisnis dari berbagai skala untuk menyederhanakan proses pembayaran, mengelola transaksi dengan lancar, dan meningkatkan kepuasan pelanggan.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Manajemen Member:** Kelola informasi anggota dengan mudah untuk memperkuat hubungan dengan pelanggan setia.
+- **Manajemen Petugas:** Tetapkan peran dan akses untuk setiap petugas kasir untuk mengatur dan memantau aktivitas staf dengan efisien.
+- **Manajemen Produk:** Tambahkan, edit, atau hapus produk dengan cepat dan mudah, sertakan informasi seperti nama produk, harga, dan stok.
+- **Manajemen Kategori:** Kategorikan produk Anda untuk mempermudah navigasi dan pencarian dalam aplikasi.
+- **Laporan Stok Barang:** Pantau stok barang secara real-time dan terima pemberitahuan saat stok mendekati titik peringatan.
+- **Laporan Penjualan:** Analisis kinerja penjualan dengan laporan penjualan yang komprehensif untuk mengidentifikasi tren dan strategi yang tepat.
 
-## Learning Laravel
+- **Sistem Transaksi yang Fluid:** Proses transaksi dengan cepat dan lancar menggunakan sistem transaksi yang responsif dan intuitif.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# Instalasi
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. Unduh repositori CashierApp.
+2. Pastikan PHP 8.2+ sudah terinstal dan konfigurasi XAMPP sudah disiapkan.
+3. Jalankan `composer install` untuk menginstal dependensi PHP.
+4. Jalankan `npm install` untuk menginstal dependensi JavaScript.
+5. Salin file `.env.example` dan ubah namanya menjadi `.env`. Konfigurasikan koneksi basis data dan preferensi aplikasi lainnya di file `.env`.
+6. Jalankan migrasi basis data dengan perintah `php artisan migrate` untuk menghasilkan tabel-tabel yang diperlukan.
+7. Buka aplikasi dalam editor kode seperti Visual Studio Code.
+8. Buka file seeder yang berisi data pengguna (misalnya `UsersTableSeeder.php`) dan ubah nilai-nilai sesuai preferensi Anda. Pastikan untuk menyimpan password dalam bentuk hash yang aman (misalnya, menggunakan `bcrypt()` jika menggunakan Laravel).
+9. Jalankan perintah `php artisan db:seed --class=NamaSeeder` untuk menjalankan seeder dan memasukkan data yang telah Anda ubah ke dalam basis data.
+10. Jalankan server lokal PHP dengan perintah `php artisan serve`.
+11. Untuk pengembangan frontend, jalankan `npm run dev` untuk mengaktifkan mode pengembangan.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# Changelog
 
-## Laravel Sponsors
+- **Version 1**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+  1. Login Authentication
+  2. CRUD Master Data (Produk, Member, Petugas, Kategori)
 
-### Premium Partners
+- **Version 2**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+  1. Bug Fixing CRUD Master Data
+  2. Transaction
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- **Version 3**
+  1. Bug Fixing Transaction and Finalization
+  2. Stok Barang Report and Sales Report
+  3. Bug Fixing Validation on CRUD Master Data
